@@ -6,7 +6,11 @@ jQuery(document).ready(function ($) {
         enterCode.toString();
 
         $("#numbers button").click(function () {
-
+            if ('vibrate' in navigator) {
+                // Shake that device!
+                navigator.vibrate(65);
+            }
+             
             var clickedNumber = $(this).text().toString();
             enterCode = enterCode + clickedNumber;
             var lengthCode = parseInt(enterCode.length);
@@ -24,6 +28,10 @@ jQuery(document).ready(function ($) {
 
                 } else {
                     // Wrong PIN!
+                    if ('vibrate' in navigator) {
+                        // Shake that device!
+                        navigator.vibrate(250);
+                    }
                     $("#fields").addClass("miss");
                     enterCode = "";
                     setTimeout(function () {

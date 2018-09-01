@@ -1,7 +1,5 @@
 <!doctype html>
 <html lang="en">
-<!-- Mobile lock screen pin code - Benjamin Koehler -->
-<!-- https://codepen.io/Benny29390/pen/Lkwbxz -->
 
 <head>
     <meta charset="utf-8">
@@ -11,7 +9,7 @@
     <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c"
         crossorigin="anonymous"></script> -->
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Splash screen</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -24,120 +22,69 @@
     <style>
         html body {
             font-family: 'Roboto', sans-serif;
-        }
-        
-        .grid__col {
-            padding-left: 10px;
-            padding-right: 10px;
+            /* background-color: #fff; */
+            background-image: linear-gradient(to bottom, #314955, #253741);
+            color: #ddd;
         }
 
-        #numbers {
-            padding: 0 5px;
-        }
-
-        #numbers .grid {
-            font-size: 2rem; 
-            line-height: 1;
-        }
-
-        #fields .grid {
-            font-size: 1rem; 
+        .responsive {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- <nav class="navbar navbar-expand-sm navbar-dark bg-primary mb-3">
-        <div class="container">
-            <a class="navbar-brand" href="/">Logo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                        <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink">Your
-                            Ideas
-                        </a>
-                        <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">Ideas</a>
-                            <a href="#" class="dropdown-item">Add</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Logout</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Register</a>
-                    </li>
-                </ul>
+    <div class="container" style="min-height: 629px;">
+        <div class="row" style="padding: 150px 0px 0px 0px;">
+            <div class="col-12">
+                <img class="rounded mx-auto d-block responsive" src="/images/blue-slogan-transparent-3.png">
             </div>
         </div>
-    </nav> -->
-
-    <main role="main" class="container">
-
-        <div id="pincode">
-            <div class="table">
-                <div class="cell">
-
-                    <div id="anleitung">
-                        <p>
-                            Enter passcode
-                        </p>
-                    </div>
-
-                    <div id="fields">
-                        <div class="grid">
-                            <div class="grid__col grid__col--1-of-4 numberfield"><span></span></div>
-                            <div class="grid__col grid__col--1-of-4 numberfield"><span></span></div>
-                            <div class="grid__col grid__col--1-of-4 numberfield"><span></span></div>
-                            <div class="grid__col grid__col--1-of-4 numberfield"><span></span></div>
-                        </div>
-                    </div>
-
-                    <div id="numbers">
-                        <div class="grid">
-                            <div class="grid__col grid__col--1-of-3" style="padding-bottom: 15px;"><button>1</button></div>
-                            <div class="grid__col grid__col--1-of-3" style="padding-bottom: 15px;"><button>2</button></div>
-                            <div class="grid__col grid__col--1-of-3" style="padding-bottom: 15px;"><button>3</button></div>
-
-                            <div class="grid__col grid__col--1-of-3" style="padding-bottom: 15px;"><button>4</button></div>
-                            <div class="grid__col grid__col--1-of-3" style="padding-bottom: 15px;"><button>5</button></div>
-                            <div class="grid__col grid__col--1-of-3" style="padding-bottom: 15px;"><button>6</button></div>
-
-                            <div class="grid__col grid__col--1-of-3" style="padding-bottom: 15px;"><button>7</button></div>
-                            <div class="grid__col grid__col--1-of-3" style="padding-bottom: 15px;"><button>8</button></div>
-                            <div class="grid__col grid__col--1-of-3" style="padding-bottom: 15px;"><button>9</button></div>
-
-                            <div class="grid__col grid__col--1-of-3" style="padding-bottom: 15px;"><button>Clear</button></div>
-                            <div class="grid__col grid__col--1-of-3" style="padding-bottom: 15px;"><button>0</button></div>
-                            <div class="grid__col grid__col--1-of-3"style="padding-bottom: 15px;"><button>Back</button></div>
-
-                        </div>
-                    </div>
-
+        <div class="row" style="padding: 30px 20px 10px 20px;">
+            <div class="col-12" style="text-align: center;">
+                <p style="font-size: 0.9rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</p>
+                <!-- <p style="font-size: 0.9rem;">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> -->
+                <!-- <p style="font-size: 0.9rem;">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+            </div>
+        </div>
+        
+        <!--Cannot find a cookie on the phone/pc-->
+        <!-- <div class="row" style="padding: 5px 10px 0px 10px;">
+            <div class="col-12" style="text-align: center;">
+                <div class="text-center mt-4">
+                    <button class="btn btn-default btn-block accent-color waves-effect waves-light" id="log-in" type="button" style="margin-bottom: 15px;">Log In</button>
                 </div>
             </div>
         </div>
+        <div class="row" style="padding: 0px 10px 0px 10px;">
+            <div class="col-12" style="text-align: center;">
+                <div class="text-center mt-4">
+                    <button class="btn btn-default btn-block accent-color waves-effect waves-light" id="sign-up" type="button" style="margin-bottom: 15px;">Sign
+                        Up</button>
+                </div>
+            </div>
+        </div> -->
 
-        <div id="restartbtn">RESTART</div>
-    </main><!-- /.container -->
-
+        <!--Found a cookie with the person's name on phone/pc-->
+        <div class="row" style="padding: 5px 10px 0px 10px;">
+            <div class="col-12" style="text-align: center;">
+                <div class="text-center mt-4">
+                    <button class="btn btn-default btn-block accent-color waves-effect waves-light" id="log-in" type="button" style="margin-bottom: 15px;">Continue as Pikkie</button>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row" style="padding: 0px 10px 0px 10px;">
+            <div class="col-12" style="text-align: center;">
+                <div class="text-center mt-4">
+                    <button class="btn btn-default btn-block accent-color waves-effect waves-light" id="sign-up" type="button" style="margin-bottom: 15px;">Sign
+                        Up</button>
+                </div>
+            </div>
+        </div> -->
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -147,6 +94,20 @@
         crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/site.js"></script>
+
+    <script>
+        $(function () {
+
+        });
+
+        $("#log-in").click(function() {
+            location.href = "passcode.html";
+        });
+
+        $("#sign-up").click(function() {
+            // TODO: Implement
+        });
+    </script>
 </body>
 
 </html>

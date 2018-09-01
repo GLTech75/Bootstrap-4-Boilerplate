@@ -11,7 +11,7 @@ https://www.google.co.za/imgres?imgurl=http%3A%2F%2Fwww.kanhangadvartha.com%2Fda
 /* @import 'https://fonts.googleapis.com/css?family=Titillium+Web:400,700'; */
 body {
     position: relative;
-    background-color: #272a2f;
+    /* background-color: #272a2f; */
     font-family: 'Titillium Web', sans-serif;
     -webkit-font-smoothing: antialiased;
     height: 100%;
@@ -44,6 +44,32 @@ body {
 # Pincode
 ----*/
 
+#splash {
+    position: fixed;
+    overflow: hidden;
+    height: 667px;
+    width: 375px;
+    z-index: 9999;
+    /* background-color: #272a2f; */
+    /* background-color: #272528; */
+    /* background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/214624/mountain.jpg"); */
+    /* background-image: url("/images/HD-Wallpapers-For-Mobile-5-gray.jpg"); */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.6);
+    top: 50%;
+    left: 50%;
+    margin-top: -335px;
+    /* Negative half of height. */
+    margin-left: -188px;
+    /* Negative half of width. */
+}
+
 #pincode {
     position: fixed;
     overflow: hidden;
@@ -51,9 +77,9 @@ body {
     width: 375px;
     z-index: 9999;
     /* background-color: #272a2f; */
-    background-color: #272528;
+    /* background-color: #272528; */
     /* background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/214624/mountain.jpg"); */
-    background-image: url("/images/HD-Wallpapers-For-Mobile-5-gray.jpg");
+    /* background-image: url("/images/HD-Wallpapers-For-Mobile-5-gray.jpg"); */
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -132,7 +158,7 @@ body {
 #fields {
     max-width: 200px;
     padding: 0 20px;
-    margin: 25px auto 50px auto;
+    margin: 25px auto 30px auto;
     position: relative;
     display: block;
 }

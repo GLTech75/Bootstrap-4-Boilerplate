@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<!-- Mobile lock screen pin code - Benjamin Koehler -->
+<!-- https://codepen.io/Benny29390/pen/Lkwbxz -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c"
+        crossorigin="anonymous"></script> -->
+
+    <title>Passcode</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        html body {
+            font-family: 'Roboto', sans-serif;
+            background-image: linear-gradient(to bottom, #314955, #253741);
+        }
+        
+        .grid__col {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        #numbers {
+            padding: 0 5px;
+        }
+
+        #numbers .grid {
+            font-size: 2rem; 
+            line-height: 1;
+        }
+
+        #fields .grid {
+            font-size: 1rem; 
+        }
+    </style>
+</head>
+
+<body>
+    
+    <main role="main" class="container">
+
+        <div id="pincode">
+            <div class="table">
+                <div class="cell">
+
+                    <div id="anleitung">
+                        <p>
+                            Enter passcode
+                        </p>
+                    </div>
+
+                    <div id="fields">
+                        <div class="grid">
+                            <div class="grid__col grid__col--1-of-4 numberfield"><span></span></div>
+                            <div class="grid__col grid__col--1-of-4 numberfield"><span></span></div>
+                            <div class="grid__col grid__col--1-of-4 numberfield"><span></span></div>
+                            <div class="grid__col grid__col--1-of-4 numberfield"><span></span></div>
+                        </div>
+                    </div>
+
+                    <div id="numbers">
+                        <div class="grid">
+                            <div class="grid__col grid__col--1-of-3" style="padding-bottom: 15px;"><button>1</button></div>
+                            <div class="grid__col grid__col--1-of-3" style="padding-bottom: 15px;"><button>2</button></div>
+                            <div class="grid__col grid__col--1-of-3" style="padding-bottom: 15px;"><button>3</button></div>
+
+                            <div class="grid__col grid__col--1-of-3" style="padding-bottom: 15px;"><button>4</button></div>
+                            <div class="grid__col grid__col--1-of-3" style="padding-bottom: 15px;"><button>5</button></div>
+                            <div class="grid__col grid__col--1-of-3" style="padding-bottom: 15px;"><button>6</button></div>
+
+                            <div class="grid__col grid__col--1-of-3" style="padding-bottom: 15px;"><button>7</button></div>
+                            <div class="grid__col grid__col--1-of-3" style="padding-bottom: 15px;"><button>8</button></div>
+                            <div class="grid__col grid__col--1-of-3" style="padding-bottom: 15px;"><button>9</button></div>
+
+                            <!-- <div class="grid__col grid__col--1-of-3" style="padding-bottom: 15px;"><button>Clear</button></div> -->
+                            <div class="grid__col grid__col--1-of-3" style="padding-bottom: 15px;"><button>0</button></div>
+                            <!-- <div class="grid__col grid__col--1-of-3"style="padding-bottom: 15px;"><button>Back</button></div> -->
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="restartbtn">RESTART</div>
+    </main><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/site.js"></script>
+</body>
+
+</html>
